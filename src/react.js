@@ -5,14 +5,15 @@ import hooksPlugin from "eslint-plugin-react-hooks";
 const react = [
   jsxA11y.flatConfigs.recommended,
   {
-    name: "react:recommended",
+    name: "react/recommended",
     ...reactPlugin.configs.flat.recommended,
   },
   {
-    name: "react:jsx-runtime",
+    name: "react/jsx-runtime",
     ...reactPlugin.configs.flat["jsx-runtime"],
   },
   {
+    name: "react-hooks/recommended",
     plugins: {"react-hooks": hooksPlugin},
     rules: hooksPlugin.configs.recommended.rules,
   },
@@ -20,7 +21,7 @@ const react = [
 
 // react-intl needs some allow-listing when using their components
 const reactIntl = {
-  name: "maykin:react-intl",
+  name: "maykin/react-intl",
   rules: {
     "react/style-prop-object": [
       "error",

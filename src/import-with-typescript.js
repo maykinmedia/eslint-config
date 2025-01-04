@@ -3,14 +3,17 @@ import importPlugin from "eslint-plugin-import";
 
 const typescriptImports = [
   {
-    name: "maykin:import:typescript-resolver",
+    name: "maykin/import/typescript-resolver",
     settings: {
       "import/resolver": {
         typescript: true,
       },
     }
   },
-  importPlugin.flatConfigs.typescript,
+  {
+    name: "import/typescript-settings",
+    ...importPlugin.flatConfigs.typescript,
+  }
 ];
 
 export default typescriptImports;

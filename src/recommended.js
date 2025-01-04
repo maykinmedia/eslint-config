@@ -26,7 +26,7 @@ const recommended = [
   reactIntl,
   // Prettier (avoid conflicts)
   {
-    name: "prettier:recommended",
+    name: "prettier/recommended",
     ...prettierRecommended,
   },
   // Storybook

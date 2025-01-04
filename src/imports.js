@@ -1,14 +1,14 @@
 import importPlugin from "eslint-plugin-import";
 
 const importConfig = {
-    settings: {
-      "import/resolver": {
-        // for typescript, see import-with-typescript.js, as it requires an extra (optional) plugin
-        node: {
-          // if a project uses jsconfig.json, it's likely that import shorthands/aliases
-          // are set up relative to the `src` directory.`
-          moduleDirectory: ['src', 'node_modules'],
-        },
+  settings: {
+    "import/resolver": {
+      // for typescript, see import-with-typescript.js, as it requires an extra (optional) plugin
+      node: {
+        // if a project uses jsconfig.json, it's likely that import shorthands/aliases
+        // are set up relative to the `src` directory.`
+        moduleDirectory: ['src', 'node_modules'],
+      },
     },
   },
   ...importPlugin.flatConfigs.recommended,

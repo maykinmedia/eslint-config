@@ -6,7 +6,7 @@ import globals from "globals";
 // We deliberately do not specify any file (extension) patterns, since these rules
 // typically apply to all JS-like source code.
 const environment = {
-  name: "project:environment",
+  name: "maykin/environment",
   settings: {
     // technically this belongs in the react module, but it will be ignored if no
     // react plugins are present and it *is* a sane default that applies to many of
@@ -26,7 +26,10 @@ const environment = {
 const base = [
   environment,
   // Standard JS rules from ESLint itself
-  js.configs.recommended,
+  {
+    name: "eslint/js",
+    ...js.configs.recommended
+  },
 ];
 
 
@@ -41,7 +44,7 @@ const base = [
  * @return {{name: string, ignores: string[]}} A config entry with glob patterns to ignore the specified dirs.
  */
 const ignoreBuildArtifacts = (dirNames = ["dist", "build"]) => ({
-  name: "project:ignore build artifacts",
+  name: "project/ignore build artifacts",
   ignores: dirNames.map(name => `${name}/**/*`),
 });
 

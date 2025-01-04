@@ -5,11 +5,11 @@ const storybookConfig = [
   // Storybook stories
   ...storybook.configs["flat/recommended"],
   {
-    name: "project:storybook:check-config",
+    name: "maykin/storybook/check-config",
     ignores: ["!.storybook"],
   },
   {
-    name: "project:storybook:test-runner",
+    name: "maykin/storybook/test-runner",
     files: [".storybook/test-runner-jest.{cjs,js}"],
     languageOptions: {
       globals: globals.commonjs,
