@@ -32,11 +32,11 @@
   },
   "homepage": "https://github.com/maykinmedia/eslint-config#readme",
   "dependencies": {
+    "eslint": ">=8.57.1",
     "@eslint/js": ">=8.57.1",
     "globals": ">=15.14.0"
   },
   "peerDependencies": {
-    "eslint": "^8.57.1 || ^9.x",
     "eslint-import-resolver-typescript": ">=3.7.0",
     "eslint-plugin-import": ">=2.31.0",
     "eslint-plugin-jsx-a11y": ">=6.10.2",
@@ -47,8 +47,6 @@
     "typescript-eslint": ">=8.19.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.17.0",
-    "eslint": "^9.17.0",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
