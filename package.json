@@ -1,6 +1,6 @@
 {
   "name": "@maykinmedia/eslint-config",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "ESLint configs (flat) used within Maykin",
   "main": "dist/index.js",
   "type": "module",
