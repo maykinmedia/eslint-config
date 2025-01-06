@@ -30,6 +30,12 @@ const base = [
     name: "eslint/js",
     ...js.configs.recommended
   },
+  {
+    name: "maykin/rules",
+    rules: {
+      "max-depth": ["error", 3], // stricter than the default of 4
+    },
+  },
 ];
 
 
