@@ -21,6 +21,7 @@ npm install \
     eslint-plugin-import \
     eslint-plugin-jsx-a11y \
     eslint-plugin-prettier \
+    eslint-config-prettier \
     eslint-plugin-react \
     eslint-plugin-react-hooks \
     eslint-plugin-storybook \
@@ -65,6 +66,7 @@ For company-wide consistency, we really encourage you to use the recommended con
 * [React](#react) plugins
 * [Typescript](#typescript) plugins
 * `eslint-plugin-import`
+* `eslint-config-prettier`
 * `eslint-plugin-prettier`
 * `eslint-plugin-storybook`
 

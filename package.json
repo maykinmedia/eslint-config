@@ -40,11 +40,41 @@
     "eslint-import-resolver-typescript": ">=3.7.0",
     "eslint-plugin-import": ">=2.31.0",
     "eslint-plugin-jsx-a11y": ">=6.10.2",
+    "eslint-config-prettier": ">=9.0.0",
     "eslint-plugin-prettier": ">=5.2.1",
     "eslint-plugin-react": ">=7.37.3",
     "eslint-plugin-react-hooks": ">=5.1.0",
     "eslint-plugin-storybook": ">=0.11.2",
     "typescript-eslint": ">=8.19.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint-import-resolver-typescript": {
+      "optional": true
+    },
+    "eslint-plugin-import": {
+      "optional": true
+    },
+    "eslint-plugin-jsx-a11y": {
+      "optional": true
+    },
+    "eslint-config-prettier": {
+      "optional": true
+    },
+    "eslint-plugin-prettier": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "eslint-plugin-storybook": {
+      "optional": true
+    },
+    "typescript-eslint": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "eslint-import-resolver-typescript": "^3.7.0",
