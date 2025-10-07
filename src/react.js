@@ -1,6 +1,6 @@
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import reactPlugin from "eslint-plugin-react";
-import hooksPlugin from "eslint-plugin-react-hooks";
+import reactHooks from 'eslint-plugin-react-hooks';
 
 const react = [
   jsxA11y.flatConfigs.recommended,
@@ -14,8 +14,8 @@ const react = [
   },
   {
     name: "react-hooks/recommended",
-    plugins: {"react-hooks": hooksPlugin},
-    rules: hooksPlugin.configs.recommended.rules,
+    plugins: {"react-hooks": reactHooks},
+    extends: ['react-hooks/recommended'],
   },
 ];
 
