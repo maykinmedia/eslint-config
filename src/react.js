@@ -15,7 +15,7 @@ const react = [
   {
     name: "react-hooks/recommended",
     plugins: {"react-hooks": reactHooks},
-    extends: ['react-hooks/recommended'],
+    ...reactHooks.configs.flat.recommended,
   },
 ];
 
