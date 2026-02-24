@@ -4,6 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 
 const react = [
   jsxA11y.flatConfigs.recommended,
+  reactHooks.configs.flat.recommended,
   {
     name: "react/recommended",
     ...reactPlugin.configs.flat.recommended,
@@ -11,11 +12,6 @@ const react = [
   {
     name: "react/jsx-runtime",
     ...reactPlugin.configs.flat["jsx-runtime"],
-  },
-  {
-    name: "react-hooks/recommended",
-    plugins: {"react-hooks": reactHooks},
-    ...reactHooks.configs.flat.recommended,
   },
 ];
 
