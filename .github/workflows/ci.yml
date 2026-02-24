@@ -14,6 +14,13 @@ jobs:
     name: Create production build
     runs-on: ubuntu-latest
 
+    environment:
+      name: release
+      url: https://www.npmjs.com/package/@maykinmedia/eslint-config
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,5 +45,3 @@ jobs:
           VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
 
           npm publish --access public --new-version="$VERSION"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
