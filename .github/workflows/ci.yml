@@ -30,6 +30,9 @@ jobs:
           registry-url: https://registry.npmjs.org/
           scope: '@maykinmedia'
 
+      - name: Update NPM
+        run: npm install -g npm@latest
+
       - name: Install dependencies
         run: npm ci
 
@@ -43,5 +46,8 @@ jobs:
         run: |
           # Strip git ref prefix from version
           VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+
+          echo $VERSION
+          echo npm publish --access public --new-version="$VERSION"
 
           npm publish --access public --new-version="$VERSION"
